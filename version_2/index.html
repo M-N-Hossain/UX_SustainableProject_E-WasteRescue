@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReCircuit - Electronic Waste Solutions</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-dark-green text-white">
+    <!-- Header -->
+    <header class="bg-dark-green py-4 px-8 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="./assets/logo.png" alt="ReCircuit Logo" class="h-8">
+        </div>
+        <nav class="hidden md:block">
+            <ul class="flex space-x-8">
+                <li><a href="#" class="hover:text-accent-green">Problem</a></li>
+                <li><a href="#" class="hover:text-accent-green">Solutions</a></li>
+                <li><a href="#" class="hover:text-accent-green">Resources</a></li>
+                <li><a href="#" class="hover:text-accent-green">Take Action</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 px-8 text-center">
+        <h1 class="text-4xl font-bold mb-2">Power a Greener Future</h1>
+        <p class="text-lg mb-6 text-gray-300">Recycle, Repair, Reimagine Tech</p>
+        <p class="max-w-2xl mx-auto mb-8">Every year millions of tons of electronic waste are dumped globally, leaking toxic chemicals and wasting valuable resources.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#take-action" class="bg-accent-green text-dark-green font-medium py-2 px-6 rounded hover:bg-opacity-90 transition">Take Action</a>
+            <a href="#learn-more" class="border border-white py-2 px-6 rounded hover:bg-white hover:text-dark-green transition">Learn More</a>
+        </div>
+    </section>
+
+    <!-- E-Waste Statistics Section -->
+    <section class="py-16 px-8">
+        <h2 class="text-3xl font-bold mb-2">Electronic Waste Realities</h2>
+        <p class="mb-12 text-gray-300">Electronic waste is the fastest growing waste stream in the world. We're committed to helping you be part of the solution.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Repair Potential Card -->
+            <div class="bg-medium-green p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Repair Potential</h3>
+                <p class="text-sm mb-6">Based on 10 million analyzed devices</p>
+                
+                <div class="flex justify-center mb-4">
+                    <div class="circular-progress flex items-center justify-center">
+                        <span class="progress-value text-3xl font-bold">80%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Global E-Waste Card -->
+            <div class="bg-medium-green p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-4">56.3 million tons global e-waste</h3>
+                
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Computers and Monitors</span>
+                            <span>18.2m tons</span>
+                        </div>
+                        <div class="w-full bg-dark-green rounded-full h-2">
+                            <div class="bg-accent-green h-2 rounded-full" style="width: 32%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Consumer Electronics</span>
+                            <span>15.7m tons</span>
+                        </div>
+                        <div class="w-full bg-dark-green rounded-full h-2">
+                            <div class="bg-accent-green h-2 rounded-full" style="width: 28%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Smartphones & Tablets</span>
+                            <span>10.8m tons</span>
+                        </div>
+                        <div class="w-full bg-dark-green rounded-full h-2">
+                            <div class="bg-accent-green h-2 rounded-full" style="width: 19%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Other</span>
+                            <span>11.6m tons</span>
+                        </div>
+                        <div class="w-full bg-dark-green rounded-full h-2">
+                            <div class="bg-accent-green h-2 rounded-full" style="width: 21%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recycling Stats Card -->
+            <div class="bg-medium-green p-6 rounded-lg relative">
+                <h3 class="text-xl font-semibold mb-3">Recycling for a Greener Future</h3>
+                
+                <div class="absolute top-4 right-4">
+                    <i class="fas fa-info-circle text-accent-green"></i>
+                </div>
+                
+                <div class="bg-light-green p-4 rounded-lg mb-4">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-xl font-bold">8%</span>
+                        <i class="fas fa-recycle text-accent-green"></i>
+                    </div>
+                    <p class="text-sm">E-waste properly recycled globally</p>
+                </div>
+                
+                <div class="bg-light-green p-4 rounded-lg">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-xl font-bold">12%</span>
+                        <i class="fas fa-battery-quarter text-accent-green"></i>
+                    </div>
+                    <p class="text-sm">Resources Recovered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="py-16 px-8">
+        <div class="flex justify-between items-center mb-10">
+            <h2 class="text-3xl font-bold">Solutions</h2>
+            <a href="#" class="border border-accent-green text-accent-green px-4 py-2 rounded text-sm hover:bg-accent-green hover:text-dark-green transition">Discover More</a>
+        </div>
+        
+        <p class="mb-12">Together, we can transform our relationship with electronic devices and create a more sustainable future.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Responsible Recycling -->
+            <div class="bg-medium-green p-6 rounded-lg border-t-4 border-accent-green">
+                <div class="mb-8">
+                    <i class="fas fa-recycle text-4xl text-accent-green"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Responsible Recycling</h3>
+                <p class="text-sm mb-4">Proper e-waste recycling recovers valuable resources that can be reused in manufacturing new devices.</p>
+                <p class="text-sm">Our network of certified recyclers ensures that 95% of materials are recovered by weight, reducing mining impacts drastically.</p>
+            </div>
+            
+            <!-- Repair & Refurbishment -->
+            <div class="bg-medium-green p-6 rounded-lg border-t-4 border-accent-green">
+                <div class="mb-8">
+                    <i class="fas fa-tools text-4xl text-accent-green"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Repair & Refurbishment</h3>
+                <p class="text-sm mb-4">Extending the lifespan of electronics is often the most environmentally friendly option.</p>
+                <p class="text-sm">Our repair guides and refurbishment centers help keep valuable devices working longer and out of landfills.</p>
+            </div>
+            
+            <!-- Fighting Planned Obsolescence -->
+            <div class="bg-medium-green p-6 rounded-lg border-t-4 border-accent-green">
+                <div class="mb-8">
+                    <i class="fas fa-shield-alt text-4xl text-accent-green"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Fighting Planned Obsolescence</h3>
+                <p class="text-sm mb-4">Challenge the culture of constant upgrades by supporting manufacturers who design for longevity.</p>
+                <p class="text-sm">We advocate for right-to-repair policies to give you more control over devices you own.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="py-16 px-8 relative">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <i class="fas fa-microchip text-8xl absolute top-10 left-10"></i>
+            <i class="fas fa-mobile-alt text-8xl absolute bottom-10 right-10"></i>
+            <i class="fas fa-laptop text-8xl absolute top-1/2 left-1/3"></i>
+        </div>
+        
+        <div class="max-w-2xl mx-auto bg-gray-200 rounded-lg p-8 text-dark-green relative z-10">
+            <i class="fas fa-quote-left text-3xl text-medium-green mb-4"></i>
+            <p class="text-xl mb-4">I'm full of discarded devices, but many of them still have value.</p>
+            <p class="text-right italic">- The Electronic Waste Dump</p>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="py-16 px-8">
+        <h2 class="text-3xl font-bold mb-2">Resources</h2>
+        <p class="mb-8 text-gray-300">Access these valuable tools and guides to help reduce electronic waste in your life and community.</p>
+        
+        <div class="space-y-4 max-w-3xl">
+            <div class="border-b border-light-green pb-2 flex justify-between items-center">
+                <span>Smartphone Recycling Guide</span>
+                <i class="fas fa-chevron-right text-accent-green"></i>
+            </div>
+            <div class="border-b border-light-green pb-2 flex justify-between items-center">
+                <span>Computer & Laptop Disposal</span>
+                <i class="fas fa-chevron-right text-accent-green"></i>
+            </div>
+            <div class="border-b border-light-green pb-2 flex justify-between items-center">
+                <span>Smart Appliances Recycling</span>
+                <i class="fas fa-chevron-right text-accent-green"></i>
+            </div>
+            <div class="border-b border-light-green pb-2 flex justify-between items-center">
+                <span>Battery Disposal Safety</span>
+                <i class="fas fa-chevron-right text-accent-green"></i>
+            </div>
+            <div class="border-b border-light-green pb-2 flex justify-between items-center">
+                <span>Smartphone Screen Replacement</span>
+                <i class="fas fa-chevron-right text-accent-green"></i>
+            </div>
+            <div class="border-b border-light-green pb-2 flex justify-between items-center">
+                <span>Laptop Battery Upgrades</span>
+                <i class="fas fa-chevron-right text-accent-green"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Take Action Section -->
+    <section id="take-action" class="py-16 px-8 bg-medium-green">
+        <h2 class="text-3xl font-bold mb-6">Take Action</h2>
+        <p class="mb-12 max-w-2xl">Your choices can help reduce the burden on electronic waste across around the world.</p>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-xl font-bold mb-6">Make A Difference</h3>
+                <p class="mb-6">Sign our pledge to practice responsible electronics use and disposal. We'll provide:</p>
+                
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-accent-green mt-1 mr-3"></i>
+                        <span>Step-by-step recycling guides</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-accent-green mt-1 mr-3"></i>
+                        <span>Local recycling event notifications</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-accent-green mt-1 mr-3"></i>
+                        <span>Repair workshop invitations</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-accent-green mt-1 mr-3"></i>
+                        <span>Advocacy opportunities for right-to-repair</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block mb-1">Name</label>
+                        <input type="text" id="name" class="w-full p-2 bg-light-green rounded border border-accent-green focus:outline-none focus:ring-2 focus:ring-accent-green">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block mb-1">Email</label>
+                        <input type="email" id="email" class="w-full p-2 bg-light-green rounded border border-accent-green focus:outline-none focus:ring-2 focus:ring-accent-green">
+                    </div>
+                    
+                    <div>
+                        <label for="commitment" class="block mb-1">Your Commitment</label>
+                        <select id="commitment" class="w-full p-2 bg-light-green rounded border border-accent-green focus:outline-none focus:ring-2 focus:ring-accent-green">
+                            <option>Choose your pledge</option>
+                            <option>I'll recycle my old devices</option>
+                            <option>I'll repair instead of replace</option>
+                            <option>I'll buy refurbished when possible</option>
+                            <option>I'll support right-to-repair legislation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="pt-4">
+                        <button type="submit" class="bg-accent-green text-dark-green font-medium py-2 px-6 rounded hover:bg-opacity-90 transition">Submit Pledge</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainable Tech Brands Section -->
+    <section class="py-16 px-8">
+        <h2 class="text-3xl font-bold mb-2">Sustainable Tech Brands</h2>
+        <p class="mb-12 text-gray-300">Explore this list of sustainable tech companies and be part of the movement toward a greener future.</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Fairphone -->
+            <div class="bg-medium-green p-6 rounded-lg text-center">
+                <img src="./assets/fairphone.png" alt="Fairphone Logo" class="mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Fairphone</h3>
+                <p class="text-sm">Modular smartphones designed for repair</p>
+            </div>
+            
+            <!-- Dell Refurbished -->
+            <div class="bg-medium-green p-6 rounded-lg text-center">
+                <img src="./assets/dell.png" alt="Dell Logo" class="mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Dell Refurbished</h3>
+                <p class="text-sm">Certified refurbished computers</p>
+            </div>
+            
+            <!-- Framework Laptop -->
+            <div class="bg-medium-green p-6 rounded-lg text-center">
+                <img src="./assets/framework.png" alt="Framework Logo" class="mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Framework Laptop</h3>
+                <p class="text-sm">Modular, repairable laptops</p>
+            </div>
+            
+            <!-- iFixit -->
+            <div class="bg-medium-green p-6 rounded-lg text-center">
+                <img src="./assets/ifixit.png" alt="iFixit Logo" class="mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">iFixit</h3>
+                <p class="text-sm">Repair guides and tools</p>
+            </div>
+            
+            <!-- Apple Recycling -->
+            <div class="bg-medium-green p-6 rounded-lg text-center">
+                <img src="./assets/apple.png" alt="Apple Logo" class="mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Apple Recycling</h3>
+                <p class="text-sm">Trade-in and recycling program</p>
+            </div>
+            
+            <!-- Phonebloks -->
+            <div class="bg-medium-green p-6 rounded-lg text-center">
+                <img src="./assets/phonebloks.png" alt="Phonebloks Logo" class="mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Phonebloks</h3>
+                <p class="text-sm">Modular phone concept</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-green py-12 px-8 border-t border-light-green">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <img src="./assets/logo.png" alt="ReCircuit Logo" class="mb-4">
+                <p class="text-sm text-gray-300">A mission to reduce electronic waste and promote sustainable technology practices.</p>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="#" class="hover:text-accent-green">Home</a></li>
+                    <li><a href="#" class="hover:text-accent-green">About Us</a></li>
+                    <li><a href="#" class="hover:text-accent-green">Our Impact</a></li>
+                    <li><a href="#" class="hover:text-accent-green">Blog</a></li>
+                    <li><a href="#" class="hover:text-accent-green">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-bold mb-4">Resources</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="#" class="hover:text-accent-green">E-Waste Recycling Centers</a></li>
+                    <li><a href="#" class="hover:text-accent-green">Repair Guides</a></li>
+                    <li><a href="#" class="hover:text-accent-green">Sustainable Tech</a></li>
+                    <li><a href="#" class="hover:text-accent-green">Educational Resources</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-bold mb-4">Contact</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li>info@recircuit.org</li>
+                    <li>+1 (555) 123-4567</li>
+                    <li>123 Green Street</li>
+                    <li>San Francisco, CA 94110</li>
+                </ul>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-accent-green hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-accent-green hover:text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-accent-green hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-accent-green hover:text-white"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12 pt-6 border-t border-light-green text-sm text-gray-400 flex flex-col md:flex-row justify-between">
+            <p>© 2025 ReCircuit. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-accent-green">Privacy Policy</a>
+                <a href="#" class="hover:text-accent-green">Terms of Service</a>
+                <a href="#" class="hover:text-accent-green">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>

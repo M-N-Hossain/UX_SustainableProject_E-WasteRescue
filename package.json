@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "dev2": "npx @tailwindcss/cli -i ./version_2/input.css -o ./dist/output.css --watch",
     "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css"
   },
   "keywords": [],

@@ -3,6 +3,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'dark-green': '#1a2e29',
+        'medium-green': '#2b4c43',
+        'light-green': '#5b7b6f',
+        'accent-green': '#8cc3a1',
         green: {
           50: "#f0fdf4",
           100: "#d1fae5",
@@ -16,6 +20,9 @@ module.exports = {
           900: "#064e3b",
         },
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      }
     },
   },
 };
