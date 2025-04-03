@@ -1,27 +1,45 @@
 @import "tailwindcss";
 
-/* Custom styles that complement Tailwind */
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+@layer base {
+  :root {
+    --dark-green: #1a2e29;
+    --medium-green: #2b4c43;
+    --light-green: #5b7b6f;
+    --accent-green: #8cc3a1;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
 }
 
-.eco-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.stats-card {
-    transition: transform 0.3s ease;
-}
-
-.stats-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Dark mode optimization for energy efficiency */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #111827;
-        color: #d1fae5;
-    }
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(180deg, var(--dark-green) 0%, var(--medium-green) 100%);
+  }
+  
+  .circular-progress {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(var(--accent-green) 0%, var(--accent-green) 80%, var(--medium-green) 80%, var(--medium-green) 100%);
+  }
+  
+  .circular-progress::after {
+    content: '';
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: var(--medium-green);
+    top: 15px;
+    left: 15px;
+  }
+  
+  .progress-value {
+    position: relative;
+    z-index: 10;
+  }
 }

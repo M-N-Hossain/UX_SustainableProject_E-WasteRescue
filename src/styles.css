@@ -1,0 +1,106 @@
+:root {
+    --dark-green: #1a2e29;
+    --medium-green: #2b4c43;
+    --light-green: #5b7b6f;
+    --accent-green: #8cc3a1;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-dark-green {
+    background-color: var(--dark-green);
+}
+
+.bg-medium-green {
+    background-color: var(--medium-green);
+}
+
+.bg-light-green {
+    background-color: var(--light-green);
+}
+
+.bg-accent-green {
+    background-color: var(--accent-green);
+}
+
+.text-dark-green {
+    color: var(--dark-green);
+}
+
+.text-medium-green {
+    color: var(--medium-green);
+}
+
+.text-light-green {
+    color: var(--light-green);
+}
+
+.text-accent-green {
+    color: var(--accent-green);
+}
+
+.border-dark-green {
+    border-color: var(--dark-green);
+}
+
+.border-medium-green {
+    border-color: var(--medium-green);
+}
+
+.border-light-green {
+    border-color: var(--light-green);
+}
+
+.border-accent-green {
+    border-color: var(--accent-green);
+}
+
+.hover\:text-accent-green:hover {
+    color: var(--accent-green);
+}
+
+.hover\:bg-accent-green:hover {
+    background-color: var(--accent-green);
+}
+
+.hover\:text-dark-green:hover {
+    color: var(--dark-green);
+}
+
+.hover\:bg-white:hover {
+    background-color: white;
+}
+
+.hover\:text-white:hover {
+    color: white;
+}
+
+.gradient-bg {
+    background: linear-gradient(180deg, var(--dark-green) 0%, var(--medium-green) 100%);
+}
+
+.circular-progress {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(var(--accent-green) 0%, var(--accent-green) 80%, var(--medium-green) 80%, var(--medium-green) 100%);
+}
+
+.circular-progress::after {
+    content: '';
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: var(--medium-green);
+    top: 15px;
+    left: 15px;
+}
+
+.progress-value {
+    position: relative;
+    z-index: 10;
+}

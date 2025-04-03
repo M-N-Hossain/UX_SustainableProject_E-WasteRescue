@@ -3,183 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="E-Waste Rescue - Sustainable electronics recycling campaign">
-    <title>E-Waste Rescue</title>
-    <link href="./output.css" rel="stylesheet">
+    <title>ReCircuit - Electronic Waste Solutions</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="bg-gray-900 text-green-100 min-h-screen">
-    <div class="eco-container px-4 md:px-8 py-6">
-        <!-- Header -->
-        <header class="flex flex-col md:flex-row justify-between items-center mb-12">
-            <div class="flex items-center mb-4 md:mb-0">
-                <!-- Recycle Icon SVG -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                </svg>
-                <h1 class="text-2xl font-bold text-green-300 ml-4">E-Waste Rescue</h1>
-            </div>
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#stats" class="hover:text-green-400 transition-colors">Stats</a></li>
-                    <li><a href="#guide" class="hover:text-green-400 transition-colors">Repair Guide</a></li>
-                    <li><a href="#brands" class="hover:text-green-400 transition-colors">Sustainable Brands</a></li>
-                    <li><a href="#impact" class="hover:text-green-400 transition-colors">Software Impact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Main Content -->
-        <main class="max-w-4xl mx-auto">
-            <!-- Hero Section -->
-            <section class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4 text-green-300">"I'm full of discarded devices, but many of them still have value."</h2>
-                <p class="text-xl text-green-200 mb-8">Give electronic waste a voice. Join our mission for a sustainable digital future.</p>
-            </section>
-
-            <!-- Stats Section -->
-            <section id="stats" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 text-green-300">Electronic Waste Realities</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Stat Card 1 -->
-                    <div class="stats-card bg-gray-800 p-6 rounded-lg border border-green-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                        </svg>
-                        <h3 class="text-xl font-semibold mt-4 text-green-400">Global E-Waste</h3>
-                        <p class="text-3xl font-bold text-red-500 my-2">53.6 million tons</p>
-                        <p class="text-green-200">Electronic waste generated annually</p>
-                    </div>
-                    
-                    <!-- Stat Card 2 -->
-                    <div class="stats-card bg-gray-800 p-6 rounded-lg border border-green-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-red-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-                        </svg>
-                        <h3 class="text-xl font-semibold mt-4 text-green-400">Repair Potential</h3>
-                        <p class="text-3xl font-bold text-red-500 my-2">80%</p>
-                        <p class="text-green-200">Devices can be repaired instead of replaced</p>
-                    </div>
-                    
-                    <!-- Stat Card 3 -->
-                    <div class="stats-card bg-gray-800 p-6 rounded-lg border border-green-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                        </svg>
-                        <h3 class="text-xl font-semibold mt-4 text-green-400">Recycling Rate</h3>
-                        <p class="text-3xl font-bold text-red-500 my-2">Only 17.4%</p>
-                        <p class="text-green-200">Of e-waste is formally documented and recycled</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Repair Guide Section -->
-            <section id="guide" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 text-green-300">Electronics Repair Guide</h2>
-                <div class="bg-gray-800 p-6 rounded-lg border border-green-800">
-                    <ol class="list-decimal pl-5 space-y-4 text-green-100">
-                        <li class="pl-2">
-                            <h3 class="font-bold text-green-400 mb-1">Diagnose the issue</h3>
-                            <p>Identify symptoms and research common problems for your device model.</p>
-                        </li>
-                        <li class="pl-2">
-                            <h3 class="font-bold text-green-400 mb-1">Search for repair tutorials</h3>
-                            <p>Visit iFixit, YouTube, or manufacturer websites for step-by-step guides.</p>
-                        </li>
-                        <li class="pl-2">
-                            <h3 class="font-bold text-green-400 mb-1">Identify necessary spare parts</h3>
-                            <p>Source genuine or compatible replacement components from reliable suppliers.</p>
-                        </li>
-                        <li class="pl-2">
-                            <h3 class="font-bold text-green-400 mb-1">Use proper repair tools</h3>
-                            <p>Invest in quality repair kits designed for electronics maintenance.</p>
-                        </li>
-                        <li class="pl-2">
-                            <h3 class="font-bold text-green-400 mb-1">Consider professional repair services</h3>
-                            <p>For complex issues, consult with certified repair technicians.</p>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-
-            <!-- Software Impact Section -->
-            <section id="impact" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 text-green-300">The Consequences of Software Updates</h2>
-                <div class="bg-gray-800 p-6 rounded-lg border border-green-800">
-                    <div class="flex flex-col md:flex-row">
-                        <div class="md:w-1/2 mb-4 md:mb-0 md:pr-4">
-                            <h3 class="text-xl font-semibold text-green-400 mb-2">Planned Obsolescence</h3>
-                            <p class="mb-4">Software updates often force hardware upgrades, making perfectly functional devices obsolete.</p>
-                            <p>New operating systems may require more RAM, storage, or processing power than older devices can provide.</p>
-                        </div>
-                        <div class="md:w-1/2 md:pl-4 border-t md:border-t-0 md:border-l border-green-800 pt-4 md:pt-0">
-                            <h3 class="text-xl font-semibold text-green-400 mb-2">Sustainable Solutions</h3>
-                            <ul class="list-disc pl-5 space-y-2">
-                                <li>Support lightweight operating systems</li>
-                                <li>Install only necessary updates</li>
-                                <li>Consider alternative software options</li>
-                                <li>Advocate for extended software support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Sustainable Brands Section -->
-            <section id="brands" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 text-green-300">Sustainable Tech Brands</h2>
-                <div class="bg-gray-800 p-6 rounded-lg border border-green-800">
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        <div class="bg-green-900 p-4 rounded text-center">
-                            <h3 class="font-semibold text-green-200">Fairphone</h3>
-                            <p class="text-sm text-green-300 mt-2">Modular design for easy repair</p>
-                        </div>
-                        <div class="bg-green-900 p-4 rounded text-center">
-                            <h3 class="font-semibold text-green-200">Dell Refurbished</h3>
-                            <p class="text-sm text-green-300 mt-2">Certified pre-owned devices</p>
-                        </div>
-                        <div class="bg-green-900 p-4 rounded text-center">
-                            <h3 class="font-semibold text-green-200">Framework Laptop</h3>
-                            <p class="text-sm text-green-300 mt-2">User-repairable components</p>
-                        </div>
-                        <div class="bg-green-900 p-4 rounded text-center">
-                            <h3 class="font-semibold text-green-200">iFixit</h3>
-                            <p class="text-sm text-green-300 mt-2">Repair guides and tools</p>
-                        </div>
-                        <div class="bg-green-900 p-4 rounded text-center">
-                            <h3 class="font-semibold text-green-200">Apple Recycling</h3>
-                            <p class="text-sm text-green-300 mt-2">Trade-in and recycling program</p>
-                        </div>
-                        <div class="bg-green-900 p-4 rounded text-center">
-                            <h3 class="font-semibold text-green-200">Phonebloks</h3>
-                            <p class="text-sm text-green-300 mt-2">Modular phone concept</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Final CTA -->
-            <section class="text-center mb-16">
-                <blockquote class="text-2xl font-medium text-green-300 italic mb-6">
-                    "Every device has a story. Let's extend its life."
-                </blockquote>
-                <p class="text-green-200 mb-6">
-                    Your choices impact the electronic waste stream. Repair, reuse, and recycle to create a sustainable tech future.
-                </p>
-                <button id="learnMore" class="bg-green-700 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">
-                    Learn More About E-Waste
-                </button>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer class="mt-12 text-center text-green-500 py-4 border-t border-green-900">
-            <p class="mb-2">© 2024 E-Waste Rescue | Sustainable Tech Initiative</p>
-            <p class="text-sm">This website is optimized for minimal environmental impact.</p>
-            <p class="text-xs mt-4 text-green-700">Estimated carbon footprint: 0.05g CO₂ per page view</p>
-        </footer>
+<body class="bg-dark-green text-white">
+    <!-- Content will be loaded from component files -->
+    <div id="app">
+        <!-- Header component will be loaded here -->
+        <div id="header"></div>
+        
+        <!-- Hero component will be loaded here -->
+        <div id="hero"></div>
+        
+        <!-- Statistics component will be loaded here -->
+        <div id="statistics"></div>
+        
+        <!-- Solutions component will be loaded here -->
+        <div id="solutions"></div>
+        
+        <!-- Quote component will be loaded here -->
+        <div id="quote"></div>
+        
+        <!-- Resources component will be loaded here -->
+        <div id="resources"></div>
+        
+        <!-- Take Action component will be loaded here -->
+        <div id="take-action-section"></div>
+        
+        <!-- Brands component will be loaded here -->
+        <div id="brands"></div>
+        
+        <!-- Footer component will be loaded here -->
+        <div id="footer"></div>
     </div>
 
-    <!-- External JavaScript file reference -->
+    <!-- Main script to load components -->
+    <script src="./components-loader.js"></script>
+    
+    <!-- Main script for interactive elements -->
     <script src="./script.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Custom styles that complement Tailwind */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.eco-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stats-card {
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Dark mode optimization for energy efficiency */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111827;
+        color: #d1fae5;
+    }
+}
