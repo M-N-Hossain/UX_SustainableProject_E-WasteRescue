@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+
+@layer base {
+  :root {
+    --dark-green: #1a2e29;
+    --medium-green: #2b4c43;
+    --light-green: #5b7b6f;
+    --accent-green: #8cc3a1;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(180deg, var(--dark-green) 0%, var(--medium-green) 100%);
+  }
+  
+  .circular-progress {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(var(--accent-green) 0%, var(--accent-green) 80%, var(--medium-green) 80%, var(--medium-green) 100%);
+  }
+  
+  .circular-progress::after {
+    content: '';
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: var(--medium-green);
+    top: 15px;
+    left: 15px;
+  }
+  
+  .progress-value {
+    position: relative;
+    z-index: 10;
+  }
+}
